@@ -26,7 +26,7 @@ public class BrokenUrls {
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://dev.thehosteller.com/hostels");
+		driver.get("https://dev.kogo.ai/");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		List<WebElement> links = driver.findElements(By.xpath("//a"));
 		int listcount = links.size();
